@@ -15,4 +15,5 @@
 - create function called get_citations_needed_report that accept url and returns a string, the string should be formatted with each citation needed on own line, in order found.
 
 pull req: https://github.com/adhammhaydat/web-scraper/pull/1
+second pull : https://github.com/adhammhaydat/web-scraper/pull/2
 
