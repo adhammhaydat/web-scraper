@@ -30,7 +30,6 @@ def get_citations_needed_report(url):
         paragraph=c.parent.parent.parent
         list_string +=f"{paragraph.text}"
     return list_string    
-# print(get_citations_needed_report(url))
 list_string=get_citations_needed_report(url)
 a=list_string.split("\n")
 print(a[0])
