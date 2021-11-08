@@ -25,10 +25,12 @@ def get_citations_needed_report(url):
     html_text = res.text
     soup = BeautifulSoup(html_text, "html.parser")
     citation = soup.find_all('a', { "title" : "Wikipedia:Citation needed"})
-    list_string=[]
+    list_string=''
     for c in citation:
         paragraph=c.parent.parent.parent
-        list_string.append(paragraph.text)
+        list_string +=f"{paragraph.text}"
     return list_string    
-print(get_citations_needed_report(url))
+list_string=get_citations_needed_report(url)
+a=list_string.split("\n")
+print(a[0])
 time.sleep(1)
